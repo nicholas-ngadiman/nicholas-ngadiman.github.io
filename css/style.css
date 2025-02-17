@@ -1,0 +1,167 @@
+body {
+    background-color: #1b1725;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    border-bottom: 1px solid #a499b3;
+    width: 100%;
+    position: static;
+    padding: 20px 0px;
+    top: 0;
+}
+
+nav {
+    width: 600px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    padding: 0px 12px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+nav ul li a:hover {
+    color: #a499b3;
+}
+
+main {
+    width: 600px;
+    margin: 2em auto;
+}
+
+main a {
+    color: #a499b3;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+.wave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(0.0deg) }
+    10% { transform: rotate(14.0deg) }
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    100% { transform: rotate(0.0deg) }
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    margin: auto;
+    min-width: 250px;
+}
+
+img {
+    border-radius: 50%;
+    max-width: 80%;
+    height: auto;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+.experience-container {
+    padding: 15px;
+    background-color: #534b62;
+    color: white;
+    border-radius: 15px;
+    text-align: right;
+    display: flex;
+    font-style: italic;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+footer {
+    border-top: 1px solid #a499b3;
+    text-align: center;
+    padding: 10px 0px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 610px) {
+    main, nav {
+        width: 80%;
+    }
+    nav ul {
+        justify-content: center;
+    }
+    .flex-container{
+        flex-direction: column;
+    }
+    img {
+        max-width: 80%
+    }
+    footer {
+        position: static;
+    }
+}
+
+body.light-mode {
+    background-color: #f0f0ff;
+    color: #1b1725;
+}
+
+body.light-mode header {
+    border-bottom: 2px solid #1b1725;
+}
+
+body.light-mode nav ul li a {
+    color: #1b1725;
+}
+
+body.light-mode nav ul li a:hover {
+    color: #a499b3;
+}
+
+body.light-mode main a {
+    color: #534b62;
+}
+
+body.light-mode .experience {
+    background-color: #d0bcd5;
+    color: #1b1725
+}
+
+body.light-mode footer {
+    border-top: 2px solid #1b1725;
+}
