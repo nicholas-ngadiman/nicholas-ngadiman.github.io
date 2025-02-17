@@ -1,14 +1,14 @@
 body {
-    background-color: #1b1725;
+    background-color: #19122b;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
         'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    color: white;
+    color: #f0f0f0;
 }
 
 header {
-    border-bottom: 1px solid #a499b3;
+    border-bottom: 1px solid #373470;
     width: 100%;
     position: static;
     padding: 20px 0px;
@@ -30,13 +30,12 @@ nav ul {
 
 nav ul li a {
     padding: 0px 12px;
-    color: white;
     text-decoration: none;
     transition: color 0.5s;
 }
 
 nav ul li a:hover {
-    color: #a499b3;
+    color: #ffb343;
 }
 
 main {
@@ -45,7 +44,7 @@ main {
 }
 
 main a {
-    color: #a499b3;
+    color: #ffb343;
     text-decoration: none;
 }
 
@@ -95,12 +94,15 @@ h1 {
 
 .experience-container {
     padding: 15px;
-    background-color: #534b62;
-    color: white;
+    background-color: #373470;
     border-radius: 15px;
     text-align: right;
     display: flex;
     font-style: italic;
+}
+
+.experience-container .flex-child {
+    min-width: 100px;
 }
 
 .logo {
@@ -110,15 +112,22 @@ h1 {
 }
 
 footer {
-    border-top: 1px solid #a499b3;
+    border-top: 1px solid #373470;
     text-align: center;
+    position: static;
     padding: 10px 0px;
-    position: fixed;
     width: 100%;
     bottom: 0;
 }
 
+footer p {
+    font-size: 0.8rem;
+}
+
 @media only screen and (max-width: 610px) {
+    body {
+        font-size: 80%;
+    }
     main, nav {
         width: 80%;
     }
@@ -137,31 +146,27 @@ footer {
 }
 
 body.light-mode {
-    background-color: #f0f0ff;
-    color: #1b1725;
+    background-color: #c6def1;
+    color: #1d1c1a;
 }
 
 body.light-mode header {
-    border-bottom: 2px solid #1b1725;
-}
-
-body.light-mode nav ul li a {
-    color: #1b1725;
+    border-bottom: 2px solid #5c8dff;
 }
 
 body.light-mode nav ul li a:hover {
-    color: #a499b3;
+    color: #ff6961;
 }
 
 body.light-mode main a {
-    color: #534b62;
+    color: #ff6961;
 }
 
-body.light-mode .experience {
-    background-color: #d0bcd5;
-    color: #1b1725
+body.light-mode .experience-container {
+    background-color: #5c8dff;
+    color: #1d1c1a
 }
 
 body.light-mode footer {
-    border-top: 2px solid #1b1725;
+    border-top: 2px solid #5c8dff;
 }
