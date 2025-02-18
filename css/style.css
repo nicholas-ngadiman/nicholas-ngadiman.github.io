@@ -42,8 +42,8 @@ main a {
 .typed {
     max-width: fit-content;
     white-space: nowrap;
-    overflow: hidden;
     font-size: 3em;
+    overflow: hidden;
 }
 
 #hi {

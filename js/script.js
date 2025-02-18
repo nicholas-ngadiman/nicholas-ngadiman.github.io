@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function replayAnimation() {
     const element = document.querySelector('.wave');
     element.classList.remove('wave');
+    element.style.animationDelay = "0s";
     void element.offsetWidth;
     element.classList.add('wave');
 }
