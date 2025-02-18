@@ -6,63 +6,125 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Personal website of Nicholas Aresta Ngadiman">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
         <script src="https://kit.fontawesome.com/139c7e6947.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a><i class="fa-solid fa-moon" id="moon-icon"></i></a></li>
-                </ul>
-            </nav>
-        </header>
         <main>
-
-            <div class="flex-container">
-
-                <div class="flex-child">
-                    <h1>Nicholas Aresta Ngadiman</h1>
-                    <p>
-                        Hi!<span class="wave">👋</span> I am a final-year undergraduate studying BSc (Hons) Computer Science 
-                        at the <a href="https://www.ed.ac.uk/">University of Edinburgh</a>. <br> <br>
-                        My interests are in programming, especially back-end software development, data science, and machine learning. <br> <br>
-                    </p>
-                </div>
-                <div class="flex-child" style="text-align: center">
-                    <img src="images/profile.jpg" alt="Profile">
-                    <div class="socials" style="font-size: 2em;">
-                        <a href="https://www.linkedin.com/in/nicholas-ngadiman/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/nicholas-ngadiman" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="mailto:nicharesta.ng@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+            <div class="header-container source-code-pro">
+                <div class="typed">
+                    <div id="hi">
+                        Hi!<span onclick="replayAnimation()" class="wave" aria-label="Wave">👋</span>
+                    </div>
+                    <div id="nich">
+                        I'm Nich
                     </div>
                 </div>
-
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/nicholas-ngadiman/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/nicholas-ngadiman" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:nicharesta.ng@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                </div>
             </div>
-            
-            <h1>Skills</h1>
-            <ul>
-                <li>Programming Languages: Java, Python, SQL, JavaScript(Basic)</li>
-                <li>Frameworks: Spring, Quarkus, JUnit5, Mockito</li>
-                <li>Libraries: NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, OpenCV, TensorFlow, PyTorch</li>
-                <li>API Development: JSON:API, OpenAPI, Postman</li>
-                <li>Tools: Git, Docker, Jira, Confluence</li>
-            </ul>
+            <div class="about">
+                <h1>About</h1>
+                Nice to meet you! My name is <b>Nicholas Aresta Ngadiman</b>. 
+                I am currently in my final year of university, studying a <b>BSc (Hons) in Computer Science</b> at the <b>University of Edinburgh</b>.
+                <br> <br>
+                I have been coding since secondary school for my A-Levels, it has been quite a journey and I enjoy every single moment of it.
+            </div>
 
-            <h1> Experience</h1>
+            <h1>Skills</h1>
+            <h3>Back-end Development</h3>
+            <div class="skills">
+                <ul>
+                    <li>Java <i class="devicon-java-plain"></i></i></li>
+                    <li>Spring <i class="devicon-spring-original"></i></li>
+                    <li>Quarkus <i class="devicon-quarkus-plain"></i></li>
+                    <li>JUnit5 <i class="devicon-junit-plain"></i></li>
+                    <li>Maven <i class="devicon-maven-plain"></i></li>
+                </ul>
+                
+                <ul>
+                    <li>Gradle <i class="devicon-gradle-plain"></i></li>
+                    <li>JSON:API</li>
+                    <li>OpenAPI <i class="devicon-openapi-plain"></i></li>
+                    <li>Mockito</li>
+                    <li>Postman <i class="devicon-postman-plain"></i></li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h3>Data Science/Machine Learning</h3>
+                <ul>
+                    <li>Python <i class="devicon-python-plain"></i></i></li>
+                    <li>NumPy <i class="devicon-numpy-plain"></i></li>
+                    <li>Pandas <i class="devicon-pandas-plain"></i></li>
+                    <li>Matplotlib <i class="devicon-matplotlib-plain"></i></li>
+                    <li>Seaborn</li>
+                </ul>
+                <ul>
+                    <li>Scikit-learn <i class="devicon-scikitlearn-plain"></i></li>
+                    <li>OpenCV <i class="devicon-opencv-plain"></i></li>
+                    <li>TensorFlow <i class="devicon-tensorflow-original"></i></li>
+                    <li>PyTorch <i class="devicon-pytorch-original"></i></li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h3>Front-End Development</h3>
+                <ul>
+                    <li>HTML <i class="devicon-html5-plain"></i></li>
+                    <li>CSS <i class="devicon-css3-plain"></i></li>
+                    <li>JavaScript <i class="devicon-javascript-plain"></i> (Basic)</li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h3>Others:</h3>
+                <ul>
+                    <li>Docker <i class="devicon-docker-plain"></i></li>
+                    <li>SQL <i class="fa-solid fa-database"></i></li>
+                    <li>Git <i class="devicon-git-plain"></i></li>
+                    <li>Jira <i class="devicon-jira-plain"></i></li>
+                    <li>Confluence <i class="devicon-confluence-plain"></i></li>
+                    <li>Blender <i class="devicon-blender-original"></i></li>
+                </ul>
+            </div>
+
+            <h1>Experience</h1>
             <div class="experience-container">
-                <img src="images/addepar_logo.jpeg" alt="Addepar Logo" class="logo" id="addepar_logo"></img>
-                <div class="flex-child">Software Engineer Intern <br> June &dash; Sept 2024</div>
+                <div class="experience">
+                    <img src="images/addepar_logo.jpeg" alt="Addepar Logo" class="logo" id="addepar_logo"></img>
+                    <div class="flex-child">Software Engineer Intern <br> June &dash; Sept 2024</div>
+                </div>
+                <p>I designed and developed a prototype API that streamlines 
+                    the management of ETL workflows for clients, developers, 
+                    and third-party integrations. 
+                    The API utilisied <a href="https://temporal.io">Temporal</a>, 
+                    an open-source durable execution framework, foucsing on reliability 
+                    and reusability. I did initial testing with Postman requests, 
+                    then extended the coverage with JUnit5 and Mockito. 
+                    This is my first time experiencing an agile scrum working environment, 
+                    where I learnt the importance of communication and collaboration. 
+                </p>
             </div> 
             <br>
             <div class="experience-container">
-                <img src="images/rareskills_io_logo.jpeg" alt="Rareskills.io Logo" class="logo" id="rareskills_io_logo"></img>
-                <div class="flex-child">Research Intern <br> July &dash; Nov 2023</div>
+                <div class="experience">
+                    <img src="images/rareskills_io_logo.jpeg" alt="Rareskills.io Logo" class="logo" id="rareskills_io_logo"></img>
+                    <div class="flex-child">Research Intern <br> July &dash; Nov 2023</div>
+                </div>
+                <p>I researched and conducted literature reviews of blockchains and smart contracts, 
+                    focusing on the new available technologies. My responsibility extends to 
+                    reviewing existing educational material and evaluating how well clients of varying
+                    technical and web3 knowledge can understand. Furthermore, I created detailed
+                    step-by-step walkthroughs of all 35 levels of the Ethereum security wargame 
+                    <a href="https://ethernaut.openzeppelin.com/"> The Ethernaut</a>.
+                </p>
             </div>
 
         </main>
     </body>
     <footer>
-        <p>&copy; 2025 Nicholas Aresta Ngadiman. All rights reserved. Last Updated: 17 Februrary 2025</p>
+        <p>&copy; <span id="copyright-year"></span> Nicholas Aresta Ngadiman. All rights reserved. Last Updated: 18 Februrary 2025</p>
     </footer>
     <script src="js/script.js"></script>
 </html>
